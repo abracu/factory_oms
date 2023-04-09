@@ -17,6 +17,96 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "NuevoResultado",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "ResultadosCovid",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "diagnostico",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "codigoIPFS",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_resultadoCOVID",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_codigoIPFS",
+						"type": "string"
+					}
+				],
+				"name": "ResultadosPruebaCovid",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					}
+				],
+				"name": "VerResultadoPruebaCovid",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "direccion_centro_salud",
 				"outputs": [
@@ -71,11 +161,11 @@
 	},
 	"sources": {
 		"oms.sol": {
-			"keccak256": "0xe8cc0b3399f1f7986eeba7aa77c98815dbcabe754812db9cb7cd54a0433c238d",
+			"keccak256": "0x51e6504a00df60132989fb9a8f22140bb4cf3a7fbe7478a7adfe562ced03e5d7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a2bef9842788b26d1f6a23c4a5ffe5f0a17b7e5b51924f14af97f76e3ad3900c",
-				"dweb:/ipfs/Qmbg5E95mKtZuQweWjCvSxxFnhDotW77L51DxLmxTecZv2"
+				"bzz-raw://855bc6f984472aaa3423054c84237191714b64a67f757684b176ede638f46dfc",
+				"dweb:/ipfs/QmRvE9TikBFkFSJXnpmCdU5Wx7MAtSMAKt8tyBnPcA6kEV"
 			]
 		}
 	},
